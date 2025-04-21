@@ -15,12 +15,8 @@ struct PersonDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                // Person image and name
                 personHeaderSection
-                
                 Divider()
-                
-                // Shows they've been in
                 showsSection
             }
             .padding()

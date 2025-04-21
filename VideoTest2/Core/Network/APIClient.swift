@@ -25,7 +25,6 @@ class APIClient {
         
         return session.dataTaskPublisher(for: url)
             .tryMap { data, response in
-                data.printJSON()  // Imprime o JSON formatado
                 
                 guard let httpResponse = response as? HTTPURLResponse else {
                     throw APIError.invalidResponse

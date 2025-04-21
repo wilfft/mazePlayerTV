@@ -31,7 +31,6 @@ class ImageCacheService: ObservableObject {
             return Just(cachedImage).eraseToAnyPublisher()
         }
         
-        // Create a URLRequest with a custom timeout interval
         var request = URLRequest(url: url)
         request.timeoutInterval = timeoutInterval
         
@@ -79,7 +78,7 @@ class ImageCacheService: ObservableObject {
             .retry(retries)
             .map { .success($0) }
             .catch { error -> AnyPublisher<Result<UIImage, Error>, Never> in
-                // Print error for debugging
+             
                 print("Image loading error: \(error.localizedDescription)")
                 return Just(.failure(error)).eraseToAnyPublisher()
             }

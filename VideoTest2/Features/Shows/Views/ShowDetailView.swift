@@ -14,17 +14,10 @@ struct ShowDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                // Show poster and info
                 headerSection
-                
                 Divider()
-                
-                // Show summary
                 summarySection
-                
                 Divider()
-                
-                // Episodes by season
                 episodesSection
             }
             .padding()

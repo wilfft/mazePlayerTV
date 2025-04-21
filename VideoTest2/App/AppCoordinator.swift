@@ -2,9 +2,6 @@
 // MARK: - App Entry Point
 import SwiftUI
 import LocalAuthentication
-
-// MARK: - App Coordinator
-import SwiftUI
 import Combine
 
 class AppCoordinator: ObservableObject {

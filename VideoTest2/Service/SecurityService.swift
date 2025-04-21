@@ -5,7 +5,6 @@
 //  Created by William Moraes on 17/04/25.
 //
 
-
 // MARK: - Security Service
 import Foundation
 import LocalAuthentication

@@ -22,24 +22,7 @@ class PersonDetailViewModel: ObservableObject {
         self.person = person
         fetchShows()
     }
-    
-//    func fetchShows() {
-//        isLoading = true
-//        errorMessage = nil
-//        
-//        tvMazeService.fetchPersonCastCredits(id: person.id)
-//            .receive(on: DispatchQueue.main)
-//            .sink { [weak self] completion in
-//                self?.isLoading = false
-//                if case .failure(let error) = completion {
-//                    self?.errorMessage = error.localizedDescription
-//                }
-//            } receiveValue: { [weak self] castCredits in
-//                self?.shows = castCredits.map { $0.show }
-//            }
-//            .store(in: &cancellables)
-//    }
-    
+
     func fetchShows() {
         isLoading = true
         errorMessage = nil
@@ -52,7 +35,7 @@ class PersonDetailViewModel: ObservableObject {
                     self?.errorMessage = error.localizedDescription
                 }
             } receiveValue: { [weak self] castCredits in
-                // Map the embedded shows to PersonShow objects
+                
                 self?.shows = castCredits.map { credit in
                     let embeddedShow = credit.embedded.show
                     return PersonShow(

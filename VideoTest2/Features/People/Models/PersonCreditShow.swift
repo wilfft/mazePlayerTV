@@ -9,13 +9,13 @@ import Foundation
 struct PersonCredit: Decodable {
     
     let voice: Bool
-    let isSelf: Bool  // Renamed from 'self' to avoid keyword conflict
+    let isSelf: Bool
     let links: Links
     let embedded: Embedded
     
     enum CodingKeys: String, CodingKey {
         case voice
-        case isSelf = "self"  // Map "self" from JSON to "isSelf" in Swift
+        case isSelf = "self"
         case links = "_links"
         case embedded = "_embedded"
     }
@@ -43,7 +43,6 @@ struct PersonCredit: Decodable {
             let name: String
             let summary: String?
             let image: ImageLinks?
-            // Add more properties as needed
             
             struct ImageLinks: Decodable {
                 let medium: String?
