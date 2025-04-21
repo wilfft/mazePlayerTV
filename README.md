@@ -227,7 +227,15 @@ The app uses native Apple frameworks and has no external dependencies:
 
 All network requests, image caching, and data persistence are implemented using native iOS capabilities.
 
-App running...
+
+![image](https://github.com/user-attachments/assets/71093a3b-3693-44e4-b096-80e700320038)
+![image](https://github.com/user-attachments/assets/2a38805a-0576-4d50-b28a-d797fd256ab0)
+![image](https://github.com/user-attachments/assets/f53843d5-c625-41ad-91ae-6baad409b60d)
+![image](https://github.com/user-attachments/assets/eae032b5-9786-4c34-8165-ed5a85c55a51)
+![image](https://github.com/user-attachments/assets/6086e10d-389e-4aee-aff4-658e7c65c3c7)
+
+
+
 
 
 
