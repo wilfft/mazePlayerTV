@@ -226,3 +226,9 @@ The app uses native Apple frameworks and has no external dependencies:
 - LocalAuthentication
 
 All network requests, image caching, and data persistence are implemented using native iOS capabilities.
+
+App running...
+
+
+
+
